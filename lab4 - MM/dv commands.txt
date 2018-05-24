@@ -1,0 +1,6 @@
+read_file -format verilog {/users/course/2018S/cs210201/dld0119/lab4/Det.v}
+analyze -library WORK -format verilog {/users/course/2018S/cs210201/dld0119/lab4/Det.v}
+elaborate Det -architecture verilog -library WORK
+create_clock -name "clk" -period 50 -waveform { 0 25  }  { clk  }
+compile -exact_map
+write -hierarchy -format verilog -output /users/course/2018S/cs210201/dld0119/lab4/Det_syn.v

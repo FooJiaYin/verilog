@@ -1,0 +1,141 @@
+Statistics for case statements in always block at line 46 in file
+        '/users/course/2018S/cs210201/dld0119/lab4/MM.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            47            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+        in routine MM line 21 in file
+                '/users/course/2018S/cs210201/dld0119/lab4/MM.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      temp_reg       | Flip-flop |  20   |  Y  | N  | N  | N  | N  | N  | N  |
+|      data_reg       | Flip-flop |  20   |  Y  | N  | N  | N  | N  | N  | N  |
+|    col1row2_reg     | Flip-flop |  20   |  Y  | N  | N  | N  | N  | N  | N  |
+|      total_reg      | Flip-flop |  40   |  Y  | N  | N  | N  | N  | N  | N  |
+|      row1_reg       | Flip-flop |  20   |  Y  | N  | N  | N  | N  | N  | N  |
+|      col2_reg       | Flip-flop |  20   |  Y  | N  | N  | N  | N  | N  | N  |
+|      state_reg      | Flip-flop |   2   |  Y  | N  | N  | N  | N  | N  | N  |
+|        i_reg        | Flip-flop |  20   |  Y  | N  | N  | N  | N  | N  | N  |
+|        j_reg        | Flip-flop |  20   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+
+Warning: Overwriting design file '/users/course/2018S/cs210201/dld0119/lab4/MM.db'. (DDB-24)
+Elaborated 1 design.
+Current design is now 'MM'.
+design_vision> Current design is 'MM'.
+Loading db file '/usr/cad/synopsys/synthesis/cur/libraries/syn/generic.sdb'
+compile -exact_map
+Information: Checking out the license 'DesignWare'. (SEC-104)
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | K-2015.06-DWBB_201506.1 |     *     |
+| Licensed DW Building Blocks        | K-2015.06-DWBB_201506.1 |     *     |
+============================================================================
+
+
+Information: There are 4 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+
+Warning: Operating condition slow set on design MM has different process,
+voltage and temperatures parameters than the parameters at which target library
+fast is characterized. Delays may be inaccurate as a result. (OPT-998)
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'MM'
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+Information: Design 'MM' has no optimization constraints set. (OPT-108)
+
+  Beginning Implementation Selection
+  ----------------------------------
+  Processing 'MM_DW01_inc_0'
+  Processing 'MM_DW01_add_0'
+  Mapping 'MM_DW_mult_uns_0'
+  Mapping 'MM_DW_mult_tc_0'
+  Mapping 'MM_DW_cmp_0'
+  Processing 'MM_DW01_cmp6_0'
+  Processing 'MM_DW01_inc_1'
+  Mapping 'MM_DW_cmp_1'
+  Processing 'MM_DW01_dec_0'
+
+  Beginning Mapping Optimizations  (Medium effort)
+  -------------------------------
+Information: Added key list 'DesignWare' to design 'MM'. (DDB-72)
+  Structuring 'MM'
+  Mapping 'MM'
+
+                                  TOTAL
+   ELAPSED            WORST NEG   SETUP    DESIGN
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:10   35453.6      0.00       0.0       4.7
+    0:00:10   35453.6      0.00       0.0       4.7
+    0:00:10   35453.6      0.00       0.0       4.7
+    0:00:10   35453.6      0.00       0.0       4.7
+    0:00:10   35453.6      0.00       0.0       4.7
+    0:00:10   23035.4      0.00       0.0       2.7
+    0:00:10   23035.4      0.00       0.0       2.7
+    0:00:10   23035.4      0.00       0.0       2.7
+    0:00:10   23035.4      0.00       0.0       2.7
+    0:00:10   23035.4      0.00       0.0       2.7
+    0:00:10   23038.8      0.00       0.0       0.9
+    0:00:10   23040.5      0.00       0.0       0.0
+    0:00:10   23040.5      0.00       0.0       0.0
+    0:00:10   23040.5      0.00       0.0       0.0
+    0:00:10   23040.5      0.00       0.0       0.0
+
+
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+                                  TOTAL
+   ELAPSED            WORST NEG   SETUP    DESIGN
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:10   23040.5      0.00       0.0       0.0
+    0:00:10   23040.5      0.00       0.0       0.0
+    0:00:10   23040.5      0.00       0.0       0.0
+
+
+  Beginning Area-Recovery Phase  (cleanup)
+  -----------------------------
+
+                                  TOTAL
+   ELAPSED            WORST NEG   SETUP    DESIGN
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:10   23040.5      0.00       0.0       0.0
+    0:00:10   23040.5      0.00       0.0       0.0
+    0:00:10   22847.0      0.00       0.0       0.0
+    0:00:10   22840.2      0.00       0.0       0.0
+    0:00:10   22840.2      0.00       0.0       0.0
+    0:00:10   22840.2      0.00       0.0       0.0
+    0:00:10   22840.2      0.00       0.0       0.0
+    0:00:10   22840.2      0.00       0.0       0.0
+    0:00:10   22840.2      0.00       0.0       0.0
+    0:00:10   22840.2      0.00       0.0       0.0
+    0:00:10   22840.2      0.00       0.0       0.0
+    0:00:10   22840.2      0.00       0.0       0.0
+    0:00:10   22840.2      0.00       0.0       0.0
+Loading db file '/theda21_2/CBDK_IC_Contest/cur/SynopsysDC/db/slow.db'
+Loading db file '/theda21_2/CBDK_IC_Contest/cur/SynopsysDC/db/fast.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios
+
+
+  Optimization Complete
+  ---------------------
+1
+Current design is 'MM'.

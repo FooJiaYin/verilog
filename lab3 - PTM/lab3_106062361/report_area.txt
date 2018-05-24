@@ -1,0 +1,29 @@
+ 
+****************************************
+Report : area
+Design : PTM
+Version: K-2015.06-SP1
+Date   : Sat Apr 21 00:05:43 2018
+****************************************
+
+Library(s) Used:
+
+    slow (File: /theda21_2/CBDK_IC_Contest/cur/SynopsysDC/db/slow.db)
+
+Number of ports:                           76
+Number of nets:                           285
+Number of cells:                          195
+Number of combinational cells:            159
+Number of sequential cells:                34
+Number of macros/black boxes:               0
+Number of buf/inv:                         15
+Number of references:                      31
+
+Combinational area:               1427.513382
+Buf/Inv area:                       62.803799
+Noncombinational area:            1064.269764
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                  2491.783146
+Total area:                 undefined
